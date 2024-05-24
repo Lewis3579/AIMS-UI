@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="554.0" prefWidth="764.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainController">
+   <children>
+      <HBox prefHeight="100.0" prefWidth="764.0" style="-fx-background-color: #bdfbee; -fx-border-color: #33adff;">
+         <children>
+            <VBox prefHeight="97.0" prefWidth="122.0">
+               <children>
+                  <Pane prefHeight="53.0" prefWidth="80.0">
+                     <children>
+                        <Label contentDisplay="CENTER" text="Home">
+                           <font>
+                              <Font size="36.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+               </children>
+            </VBox>
+            <VBox prefHeight="97.0" prefWidth="399.0">
+               <children>
+                  <Pane prefHeight="95.0" prefWidth="399.0">
+                     <children>
+                        <TextField layoutX="11.0" layoutY="28.0" prefHeight="39.0" prefWidth="378.0" />
+                     </children>
+                  </Pane>
+               </children>
+            </VBox>
+            <VBox prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <Pane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <Label onMouseClicked="#switchToCart" text="Cart">
+                           <font>
+                              <Font size="36.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <HBox layoutX="6.0" layoutY="111.0" prefHeight="441.0" prefWidth="750.0" style="-fx-border-color: #000000;">
+         <children>
+            <VBox prefHeight="439.0" prefWidth="251.0" style="-fx-border-color: #111111;" />
+            <VBox layoutX="11.0" layoutY="11.0" prefHeight="439.0" prefWidth="251.0" style="-fx-border-color: #111111;" />
+            <VBox layoutX="263.0" layoutY="11.0" prefHeight="439.0" prefWidth="251.0" style="-fx-border-color: #111111;" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

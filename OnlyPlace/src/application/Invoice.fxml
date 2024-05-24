@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="629.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainController">
+   <children>
+      <GridPane layoutX="34.0" layoutY="137.0" prefHeight="294.0" prefWidth="651.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="123.3333740234375" minWidth="10.0" prefWidth="95.3333740234375" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="105.33329264322917" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints maxHeight="136.33331807454428" minHeight="10.0" prefHeight="36.00001017252604" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="126.6666768391927" minHeight="10.0" prefHeight="42.33331298828125" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="106.33334350585938" minHeight="10.0" prefHeight="45.333343505859375" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="74.33331298828125" minHeight="10.0" prefHeight="39.00002034505208" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="63.66664632161459" minHeight="10.0" prefHeight="36.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="46.6666564941406" minHeight="10.0" prefHeight="36.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Pane prefHeight="63.0" prefWidth="123.0">
+               <children>
+                  <Label layoutX="48.0" layoutY="17.0" text="Name" />
+               </children>
+            </Pane>
+            <Pane layoutX="11.0" layoutY="11.0" prefHeight="29.0" prefWidth="124.0" GridPane.rowIndex="1">
+               <children>
+                  <Label layoutX="48.0" layoutY="17.0" text="Phone" />
+               </children>
+            </Pane>
+            <Pane layoutX="11.0" layoutY="11.0" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="2">
+               <children>
+                  <Label layoutX="48.0" layoutY="17.0" text="City" />
+               </children>
+            </Pane>
+            <Pane layoutX="11.0" layoutY="11.0" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="3">
+               <children>
+                  <Label layoutX="48.0" layoutY="17.0" text="Address" />
+               </children>
+            </Pane>
+            <Pane layoutX="11.0" layoutY="184.0" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="4">
+               <children>
+                  <Label layoutX="48.0" layoutY="9.0" text="Email" />
+               </children>
+            </Pane>
+            <Pane layoutX="11.0" layoutY="184.0" prefHeight="19.0" prefWidth="124.0" GridPane.rowIndex="5">
+               <children>
+                  <Label layoutX="41.0" layoutY="7.0" prefHeight="17.0" prefWidth="63.0" text="Instruction" />
+               </children>
+            </Pane>
+            <Label text="Full Name" GridPane.columnIndex="1" />
+            <Label text="1234567890" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Label text="Ha Noi" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Label text="Tien Du" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Label text="123@gmail.com" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Label text="None" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+         </children>
+      </GridPane>
+      <GridPane layoutX="353.0" layoutY="460.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="Subtotal" />
+            <Label text="VAT" GridPane.rowIndex="1" />
+            <Label text="Total" GridPane.rowIndex="2" />
+         </children>
+      </GridPane>
+      <Button alignment="CENTER" contentDisplay="CENTER" layoutX="195.0" layoutY="559.0" mnemonicParsing="false" onAction="#BackToMainScene"  prefHeight="46.0" prefWidth="316.0" style="-fx-background-color: #5091e6; -fx-cursor: hand;" text="Confirm order" textFill="WHITE">
+         <font>
+            <Font name="Segoe UI Bold" size="24.0" />
+         </font>
+      </Button>
+      <Label layoutX="22.0" layoutY="28.0" prefHeight="62.0" prefWidth="117.0" text="Invoice" textFill="#191d59">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
